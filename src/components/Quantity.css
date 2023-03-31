@@ -1,0 +1,16 @@
+
+.quantity-details-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+}
+
+.quantity-buttons { 
+    display: inline-flex;
+}
+
+.quantity-extra-buttons { 
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 10rem;
+}

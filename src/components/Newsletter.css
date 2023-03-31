@@ -1,0 +1,23 @@
+.newsletter-box {
+    display: grid;
+    grid-template-rows: auto;
+    background: gray;
+    height: 6rem;
+    align-content: center;
+    gap: 1rem;
+}
+
+.newsletter-title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.newsletter-details {
+    height: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}

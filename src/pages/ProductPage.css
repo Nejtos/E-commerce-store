@@ -1,0 +1,78 @@
+.product-page-container {
+    padding-top: 14rem;
+}
+
+.product-page-grid {
+    display: flex;
+    height: 30rem;
+    justify-content: center;
+    /* grid-template-columns: 1fr 1fr; */
+}
+
+.grid-left-container {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas:
+    "one one one"
+    "two three four";
+}
+
+.pp-one {
+    display: flex;
+    background-image: url(../img/chair.jpg);
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: one;
+}
+
+.pp-two {
+    background-image: url(../img/chair.jpg);
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: two;
+}
+
+.pp-three {
+    background-image: url(../img/chair.jpg);
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: three;
+}
+
+.pp-four {
+    background-image: url(../img/chair.jpg);
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: four;
+}
+
+.grid-right-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-container-title {
+    display: flex;
+    position: fixed;
+    margin-top: 1rem;
+}
+
+.single-product-desc {
+    text-align: justify;
+    margin: 2rem;
+}
