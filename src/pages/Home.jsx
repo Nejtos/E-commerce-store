@@ -4,18 +4,11 @@ import Trends from "../components/Trends";
 import Banner from "../components/Banner";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
+import Button from "../components/Button";
+import { slideLeft } from "../hooks/slideLeft";
+import { slideRight } from "../hooks/slideRight";
 
 function Home() {
-  const slideLeft = () => {
-    const slider = document.getElementById("slider");
-    slider.scrollLeft -= 221;
-  };
-
-  const slideRight = () => {
-    const slider = document.getElementById("slider");
-    slider.scrollLeft += 221;
-  };
-
   return (
     <>
       <div className="home-page-container">
@@ -68,9 +61,7 @@ function Home() {
         <div className="container">
           <div className="home-page-sections-title">Trending Now</div>
           <div className="home-page-trends-grid">
-            <button type="submit" onClick={slideLeft}>
-              Left
-            </button>
+            <Button buttonContent="left-arrow-img" clickEffect={slideLeft} />
             <div id="slider" className="trends-slider">
               <Trends />
               <Trends />
@@ -84,9 +75,7 @@ function Home() {
               <Trends />
               <Trends />
             </div>
-            <button type="submit" onClick={slideRight}>
-              Right
-            </button>
+            <Button buttonContent="right-arrow-img" clickEffect={slideRight} />
           </div>
         </div>
       </div>
@@ -95,11 +84,8 @@ function Home() {
           <Banner />
         </div>
       </div>
-      <div className="home-page-newsletter">
-        <div className="container">
-          <Newsletter />
-        </div>
-      </div>
+      
+      <Newsletter />
       <Footer />
     </>
   );

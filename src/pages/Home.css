@@ -14,6 +14,11 @@
     "one two three-bottom";
 }
 
+.home-page-grid-box :hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .one {
   margin: 0 auto;
   display: block;
@@ -25,6 +30,7 @@
   background-image: url(../img/photo1.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  cursor: pointer;
 }
 
 .two {

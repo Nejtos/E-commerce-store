@@ -1,4 +1,5 @@
 import "./Banner.css";
+import Button from "./Button";
 
 function Banner() {
   return (
@@ -6,9 +7,9 @@ function Banner() {
         <div className="banner-box">
             <div className="banner-box-left"></div>
             <div className="banner-box-right">
-                <div className="banner-box-right-title">Comfortable & Refined Living</div>
-                <div className="banner-box-right-desc">Cos tam cos tam dabek to ...</div>
-                <div className="banner-box-right-link"><button type="submit">Click</button></div>
+                <div className="banner-box-right-text">Comfortable & Refined Living</div>
+                <div className="banner-box-right-text">Cos tam cos tam dabek to ...</div>
+                <div className="banner-box-right-text"><Button buttonContent="SHOP NOW"/></div>
             </div>
         </div>
     </>

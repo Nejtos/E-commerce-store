@@ -1,0 +1,112 @@
+.ButtonExterior {
+    text-align: center;
+}
+
+.ButtonExterior :hover{
+    opacity: 0.8;
+}
+
+.Button {
+    border: transparent;
+    cursor: pointer;
+}
+
+.ButtonInterior {
+    text-align: center;
+    
+}
+
+button[type="Categories"] {
+    background-color: transparent;
+    font-family: 'Blinker', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+button[type="Products"] {
+    background-color: transparent;
+    font-family: 'Blinker', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+button[type="left-arrow-img"] {
+    width: 2rem;
+    height: 2rem;
+    background-image: url("../img/left-arrow.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+button[type="right-arrow-img"] {
+    width: 2rem;
+    height: 2rem;
+    background-image: url("../img/right-arrow.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+button[type="back-icon-img"] {
+    width: 2rem;
+    height: 2rem;
+    background-image: url("../img/back-icon.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+button[type="all"], button[type="new collection"], button[type="kitchen"], button[type="bathroom"], button[type="chairs"], button[type="lamps"], button[type="furnitures"]{
+    height: 2rem;
+    width: 7rem;
+    border: 0.01rem solid lightgray;
+    background-color: transparent;
+    color: rgb(88, 88, 88);
+    font-weight: bold;
+}
+
+button[type="-"] {
+    /* border-radius: 8px; */
+    height: 100%;
+    width: 2.5rem;
+    border: 0.01rem solid black;
+    background: white;
+    color: black;
+}
+
+button[type="+"] {
+    /* border-radius: 8px; */
+    height: 100%;
+    width: 2.5rem;
+    border: 0.01rem solid black;
+    background: white;
+    color: black;
+}
+
+button[type="Add to cart"] {
+    /* border-radius: 8px; */
+    height: 3rem;
+    width: 12rem;
+    border: 0.01rem solid black;
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+
+button[type="BUY NOW"] {
+    height: 3rem;
+    width: 12rem;
+    border: 0.01rem solid black;
+    background: #b81818;
+    color: white;
+    font-weight: bold;
+}
+
+button[type="SHOP NOW"] {
+    height: 2rem;
+    width: 6rem;
+    font-size: 12px;
+    background: black;
+    color: white;
+    font-family: 'Blinker', sans-serif;
+}

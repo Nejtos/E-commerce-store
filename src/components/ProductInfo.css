@@ -1,0 +1,33 @@
+
+.product-info-box {
+    padding-top: 3rem;
+}
+
+.product-info-boxes {
+    width: 100%;
+    height: 6rem;
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.product-info-details {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    background-color: lightgray;
+    gap: 1.2rem;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.product-info-context {
+    margin-left: 1.5rem;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-info-context1 {
+    margin-left: 1.5rem;
+    font-size: 14px;
+}

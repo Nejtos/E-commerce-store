@@ -1,5 +1,5 @@
 .product-page-container {
-    padding-top: 14rem;
+    padding-top: 10rem;
 }
 
 .product-page-grid {
@@ -68,11 +68,16 @@
 
 .product-container-title {
     display: flex;
-    position: fixed;
+    position: absolute;
     margin-top: 1rem;
 }
 
 .single-product-desc {
     text-align: justify;
     margin: 2rem;
+}
+
+.product-page-trends {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }

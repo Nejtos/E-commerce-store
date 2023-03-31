@@ -1,10 +1,18 @@
+import "./Categories.css"
+import Filters from "../components/Filters";
+import Footer from "../components/Footer";
+import Newsletter from "../components/Newsletter";
+
 function Categories() {
   return (
-    <div className="product-page-container">
-      <div className="product-div">
-        <h1>Kategorie i takie tam cn</h1>
+    <>
+      <div className="categories-page-container">
+        <Filters />
       </div>
-    </div>
+
+      <Newsletter />
+      <Footer />
+    </>
   );
 }
 export default Categories;

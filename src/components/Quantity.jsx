@@ -1,30 +1,33 @@
 import "./Quantity.css";
 import { useState } from "react";
+import Button from "./Button";
 
 function Quantity() {
 
-    const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(0);
+
   const handleAdd = () => {
     setCounter(counter + 1);
   };
+
   const handleSub = () => {
-    setCounter(counter - 1);
+    { (counter-1 > 0) ? setCounter(counter - 1) : setCounter(0)}
   };
 
   return (
     <>
       <div className="quantity-details-box">
-        Quantity
+        <div className="quantity-details-text">Quantity:</div>
         <div className="quantity-buttons">
-            <button onClick={handleSub}>Subtract 1</button>
-            <h1>{counter}</h1>
-            <button onClick={handleAdd}>Add 1</button>
+          <Button buttonContent="-" clickEffect={handleSub} />
+          <div className="quantity-counter">{counter}</div>
+          <Button buttonContent="+" clickEffect={handleAdd} />
         </div>
-        Price: 120.99$
+        <div className="quantity-details-text">Price: 120.99$</div>
       </div>
       <div className="quantity-extra-buttons">
-        <button onClick={handleSub}>Subtract 1</button>
-        <button onClick={handleSub}>Subtract 1</button>
+        <Button buttonContent="ADD TO CART" clickEffect={handleAdd} />
+        <Button buttonContent="BUY NOW" clickEffect={handleAdd} />
       </div>
     </>
   );
