@@ -1,10 +1,10 @@
 import "./Product.css";
 import { items } from "./Data";
 
-function Product() {
+function Bestsellers() {
   return (
     <>
-    {items.map((product, index) => { 
+    {items.filter(({ category }) => category === "new collection" || category === "lamps").map((product, index) => { 
       return <div className="product-box" key={index}>
         <div className="product-box-img" style={{backgroundImage: `url(${product.img})` }}></div>
         <div className="product-box-details">
@@ -15,16 +15,5 @@ function Product() {
     })}
     </>
   );
-  // return (
-  //   <>
-  //     <div className="product-box">
-  //       <div className="product-box-img"></div>
-  //       <div className="product-box-details">
-  //         <div className="product-box-title">Modern Chair</div>
-  //         <div className="product-box-price">100$</div>
-  //       </div>
-  //     </div>
-  //   </>
-  // );
 }
-export default Product;
+export default Bestsellers;

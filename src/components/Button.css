@@ -16,6 +16,14 @@
     
 }
 
+button[type="logo-img"] {
+    width: 64px;
+    height: 64px;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
 button[type="Categories"] {
     background-color: transparent;
     font-family: 'Blinker', sans-serif;
@@ -56,7 +64,7 @@ button[type="back-icon-img"] {
     background-color: transparent;
 }
 
-button[type="all"], button[type="new collection"], button[type="kitchen"], button[type="bathroom"], button[type="chairs"], button[type="lamps"], button[type="furnitures"]{
+button[type="all"], button[type="new collection"], button[type="kitchen"], button[type="bathroom"], button[type="chairs"], button[type="lamps"], button[type="bedroom"]{
     height: 2rem;
     width: 7rem;
     border: 0.01rem solid lightgray;

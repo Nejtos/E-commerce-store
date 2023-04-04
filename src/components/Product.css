@@ -1,6 +1,7 @@
 
 .product-box {
   display: flex;
+  height: 20rem;
   flex-direction: column;
   background: white;
   outline: 2px solid rgba(0,0,0,.205);
@@ -9,7 +10,6 @@
 }
 
 .product-box-img {
-  background-image: url(../img/chair.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

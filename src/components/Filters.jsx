@@ -28,15 +28,16 @@ function Filters() {
           <Button buttonContent="New Collection" clickEffect={null} />
           <Button buttonContent="Kitchen" clickEffect={null} />
           <Button buttonContent="Bathroom" clickEffect={null} />
+          <Button buttonContent="Bedroom" clickEffect={null} />
           <Button buttonContent="Chairs" clickEffect={null} />
           <Button buttonContent="Lamps" clickEffect={null} />
-          <Button buttonContent="Furnitures" clickEffect={null} />
         </div>
       </div>
       <div className="categories-products-box">
         <div className="container">
           <div className="categories-products-grid">
             <Product />
+            {/* <Product />
             <Product />
             <Product />
             <Product />
@@ -46,8 +47,7 @@ function Filters() {
             <Product />
             <Product />
             <Product />
-            <Product />
-            <Product />
+            <Product /> */}
           </div>
         </div>
       </div>

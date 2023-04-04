@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import Button from "../components/Button";
 import { slideLeft } from "../hooks/slideLeft";
 import { slideRight } from "../hooks/slideRight";
+import Bestsellers from "../components/Bestsellers";
 
 function Home() {
   return (
@@ -39,16 +40,9 @@ function Home() {
       </div>
       <div className="home-page-new-collection">
         <div className="container">
-          <div className="home-page-sections-title">New Collection</div>
+          <div className="home-page-sections-title">Bestsellers</div>
           <div className="home-page-bestsellers-grid">
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
+            <Bestsellers />
           </div>
         </div>
       </div>
@@ -63,16 +57,6 @@ function Home() {
           <div className="home-page-trends-grid">
             <Button buttonContent="left-arrow-img" clickEffect={slideLeft} />
             <div id="slider" className="trends-slider">
-              <Trends />
-              <Trends />
-              <Trends />
-              <Trends />
-              <Trends />
-              <Trends />
-              <Trends />
-              <Trends />
-              <Trends />
-              <Trends />
               <Trends />
             </div>
             <Button buttonContent="right-arrow-img" clickEffect={slideRight} />

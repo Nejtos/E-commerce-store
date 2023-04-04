@@ -49,16 +49,6 @@ function ProductPage() {
             <Button buttonContent="left-arrow-img" clickEffect={slideLeft} />
             <div id="slider" className="trends-slider">
               <Trends />
-              <Trends />
-              <Trends />
-              <Trends />
-              <Trends />
-              <Trends />
-              <Trends />
-              <Trends />
-              <Trends />
-              <Trends />
-              <Trends />
             </div>
             <Button buttonContent="right-arrow-img" clickEffect={slideRight} />
           </div>

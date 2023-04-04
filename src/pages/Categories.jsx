@@ -2,6 +2,7 @@ import "./Categories.css"
 import Filters from "../components/Filters";
 import Footer from "../components/Footer";
 import Newsletter from "../components/Newsletter";
+import { items } from "../components/Data";
 
 function Categories() {
   return (
@@ -9,7 +10,6 @@ function Categories() {
       <div className="categories-page-container">
         <Filters />
       </div>
-
       <Newsletter />
       <Footer />
     </>

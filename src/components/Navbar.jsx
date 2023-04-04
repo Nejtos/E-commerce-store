@@ -1,4 +1,4 @@
-import Logo from "../img/logo.png";
+// import Logo from "../img/logo.png";
 import Cart from "../img/cart.png";
 import "./Navbar.css";
 import Button from "./Button";
@@ -11,20 +11,29 @@ function Navbar() {
       <nav className="navbar">
         <div className="container">
           <div className="nav-container">
-            <a href="/">
+            {/* <a href="/">
               <img src={Logo} alt="logo" className="logo-img" />
-            </a>
+            </a> */}
+            <Button
+                buttonContent="logo-img"
+                clickEffect={() => {
+                  navigate("/", { replace: true });
+                  window.scrollTo(0, 0);
+                }}
+            />
             <div className="nav-links">
               <Button
                 buttonContent="Categories"
                 clickEffect={() => {
                   navigate("/categories", { replace: true });
+                  window.scrollTo(0, 0);
                 }}
               />
               <Button
                 buttonContent="Products"
                 clickEffect={() => {
                   navigate("/products", { replace: true });
+                  window.scrollTo(0, 0);
                 }}
               />
               {/* <a href="/products">
