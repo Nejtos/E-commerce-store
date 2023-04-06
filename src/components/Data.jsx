@@ -31,9 +31,9 @@ import wallCabinet2 from "../img/Products/wall-cabinet2.webp";
 import drawerDresser from "../img/Products/drawer-dresser.webp";
 import drawerDresser1 from "../img/Products/drawer-dresser1.webp";
 import drawerDresser2 from "../img/Products/drawer-dresser2.webp";
-import armoireWithDrawers from "../img/Products/armoire-with-drawers.jpg"
-import armoireWithDrawers1 from "../img/Products/armoire-with-drawers1.jpg"
-import armoireWithDrawers2 from "../img/Products/armoire-with-drawers2.jpg"
+import armoireWithDrawers from "../img/Products/armoire-with-drawers.webp"
+import armoireWithDrawers1 from "../img/Products/armoire-with-drawers1.webp"
+import armoireWithDrawers2 from "../img/Products/armoire-with-drawers2.webp"
 import jewelryArmoire from "../img/Products/jewelry-armoire.webp";
 import jewelryArmoire1 from "../img/Products/jewelry-armoire1.webp";
 import jewelryArmoire2 from "../img/Products/jewelry-armoire2.webp";
@@ -315,8 +315,8 @@ export const items = [
     price: 219.99,
     otherImgs: [floorLamp1, floorLamp2],
     details:
-      "Brighten up your living space with this classy contemporary industrial arc floor lamp from the Franklin Iron Works brand. It comes in a downbridge metal frame, dressed in a smooth bronze finish, with a faux wood finish on the rectangular base. A light brown faux leather shade hangs from the top and an on-off step switch is built into the brown cord.",
-    texture: "Faux Leather, Wood, Bronze",
+      "A simple, classic style with a bold presence, the Hollywood Floor lamp is the perfect choice for a modern bedroom or sophisticated living space.. The off-white texture fabric shade complements a chunky black and antique brass finished pole. Control the light with a convenient on/off touch sensor switch. This lamp is not compatible with CFL bulbs or smart outlets. Bulb is not included.",
+    texture: "Metal, Cotton",
     weight: "5kg",
     size: "160cm x 28cm x 28cm",
   },

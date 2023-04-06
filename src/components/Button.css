@@ -118,3 +118,30 @@ button[type="SHOP NOW"] {
     color: white;
     font-family: 'Blinker', sans-serif;
 }
+
+button[type="∨"] {
+    height: 1.5rem;
+    width: 2rem;
+    font-size: 12px;
+    background: black;
+    color: white;
+    font-family: 'Blinker', sans-serif;
+}
+
+button[type="∧"] {
+    height: 1.5rem;
+    width: 2rem;
+    font-size: 12px;
+    background: black;
+    color: white;
+    font-family: 'Blinker', sans-serif;
+}
+
+button[type="Checkout"] {
+    height: 2rem;
+    width: 8rem;
+    outline: 0.01rem solid rgba(0,0,0,.205);
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}

@@ -7,40 +7,70 @@ import { slideRight } from "../hooks/slideRight";
 import ProductInfo from "../components/ProductInfo";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
+import { items } from "../components/Data.jsx";
+import { useLocation } from "react-router-dom";
+import { useState } from "react";
 
 function ProductPage() {
+  const location = useLocation();
+  const [activeImage, setActiveImage] = useState("");
   return (
     <>
-      <div className="product-page-container">
-        <div className="container">
-          <div className="product-page-grid">
-            <div className="product-container-title">Title title title</div>
-            <div className="grid-left-container">
-              <div className="pp-one"></div>
-              <div className="pp-two"></div>
-              <div className="pp-three"></div>
-              <div className="pp-four"></div>
-            </div>
-            <div className="grid-right-container">
-              <div className="single-product-desc">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+      {items
+        .filter(({ id }) => id === location.state)
+        .map((product, index) => {
+          return (
+            <div className="product-page-container" key={index}>
+              <div className="container">
+                <div className="product-page-grid">
+                  <div className="product-container-title">
+                    {product.description}
+                  </div>
+                  <div className="grid-left-container">
+                    <div
+                      className="pp-one"
+                      // style={{ backgroundImage: `url(${product.img})` }}
+                      style={
+                        activeImage === ""
+                          ? { backgroundImage: `url(${product.img})` }
+                          : { backgroundImage: `url(${activeImage})` }
+                      }
+                    ></div>
+                    <div
+                      className="pp-two"
+                      onMouseEnter={() => setActiveImage(product.img)}
+                      style={{ backgroundImage: `url(${product.img})` }}
+                    ></div>
+                    <div
+                      className="pp-three"
+                      onMouseEnter={() => setActiveImage(product.otherImgs[0])}
+                      style={{
+                        backgroundImage: `url(${product.otherImgs[0]})`,
+                      }}
+                    ></div>
+                    <div
+                      className="pp-four"
+                      onMouseEnter={() => setActiveImage(product.otherImgs[1])}
+                      style={{
+                        backgroundImage: `url(${product.otherImgs[1]})`,
+                      }}
+                    ></div>
+                  </div>
+                  <div className="grid-right-container">
+                    <div className="single-product-desc">{product.details}</div>
+                    <Quantity active={product.id} />
+                    <div className="quantity-extra-buttons">
+                      <Button buttonContent="ADD TO CART" clickEffect={null} />
+                      <Button buttonContent="BUY NOW" clickEffect={null} />
+                    </div>
+                  </div>
+                </div>
               </div>
-              <Quantity />
             </div>
-          </div>
-        </div>
-      </div>
+          );
+        })}
 
-      <ProductInfo />
+      <ProductInfo active={location.state} />
 
       <div className="product-page-trends">
         <div className="container">

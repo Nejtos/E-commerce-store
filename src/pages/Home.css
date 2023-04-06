@@ -95,13 +95,14 @@ p {
 
 .home-page-new-collection {
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .home-page-sections-title{
   font-size: 18.5px;
   font-weight: 650;
   color: #000000;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .home-page-bestsellers-grid {
@@ -123,7 +124,8 @@ img[id="bestsellers-img"]{
 }
 
 .home-page-trends {
-  padding-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 .home-page-trends-grid {
@@ -145,8 +147,8 @@ img[id="bestsellers-img"]{
 }
 
 .home-page-banner {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 .home-page-newsletter {

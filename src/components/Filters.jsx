@@ -2,9 +2,11 @@ import "./Filters.css";
 import Button from "./Button";
 import Product from "./Product";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
-function Filters() {
+function Filters({ filterSettings }) {
   const navigate = useNavigate();
+  const [activeFilter, setActiveFilter] = useState(filterSettings);
 
   return (
     <>
@@ -16,38 +18,63 @@ function Filters() {
                 buttonContent="back-icon-img"
                 clickEffect={() => {
                   navigate("/", { replace: true });
+                  window.scrollTo(0, 0);
                 }}
               />
               Home
             </div>
-            <div className="filters-box-title">All</div>
+            <div className="filters-box-title">{activeFilter === null ? "All" : activeFilter}</div>
           </div>
         </div>
         <div className="filters-links">
-          <Button buttonContent="All" clickEffect={null} />
-          <Button buttonContent="New Collection" clickEffect={null} />
-          <Button buttonContent="Kitchen" clickEffect={null} />
-          <Button buttonContent="Bathroom" clickEffect={null} />
-          <Button buttonContent="Bedroom" clickEffect={null} />
-          <Button buttonContent="Chairs" clickEffect={null} />
-          <Button buttonContent="Lamps" clickEffect={null} />
+          <Button
+            buttonContent="All"
+            clickEffect={() => {
+              setActiveFilter("all");
+            }}
+          />
+          <Button
+            buttonContent="New Collection"
+            clickEffect={() => {
+              setActiveFilter("new collection");
+            }}
+          />
+          <Button
+            buttonContent="Kitchen"
+            clickEffect={() => {
+              setActiveFilter("kitchen");
+            }}
+          />
+          <Button
+            buttonContent="Bathroom"
+            clickEffect={() => {
+              setActiveFilter("bathroom");
+            }}
+          />
+          <Button
+            buttonContent="Bedroom"
+            clickEffect={() => {
+              setActiveFilter("bedroom");
+            }}
+          />
+          <Button
+            buttonContent="Chairs"
+            clickEffect={() => {
+              setActiveFilter("chairs");
+            }}
+          />
+          <Button
+            buttonContent="Lamps"
+            clickEffect={() => {
+              setActiveFilter("lamps");
+            }}
+          />
         </div>
       </div>
       <div className="categories-products-box">
         <div className="container">
           <div className="categories-products-grid">
-            <Product />
-            {/* <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product /> */}
+            {activeFilter === null ? <Product filter={"all"}/> : <Product filter={activeFilter}/> }
           </div>
         </div>
       </div>

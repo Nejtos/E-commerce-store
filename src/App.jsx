@@ -1,19 +1,19 @@
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
 import Categories from "./pages/Categories";
-import Products from "./pages/ProductPage";
+import ProductPage from "./pages/ProductPage";
+import Cart from "./components/Cart";
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
+      <Cart />
       <Navbar />
       <Routes>
-        <Route path="" element={ <Home /> }/>
-        <Route path="/categories" element={ <Categories /> }/>
-        <Route path="/products" element={ <Products />}/>
+        <Route path="" element={<Home />} />
+        <Route path="/categories" element={<Categories />} />
+        <Route path="/products" element={<ProductPage />} />
       </Routes>
     </>
   );

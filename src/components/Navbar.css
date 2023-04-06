@@ -33,3 +33,21 @@ a {
 .nav-container-links{
     text-decoration: none;
 }
+
+.cart-img {
+    cursor: pointer;
+}
+
+.cart-items-counter {
+    display: flex;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: #b6002c;
+    color: white;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: -2.25rem;
+    margin-top: -0.5rem;
+}
