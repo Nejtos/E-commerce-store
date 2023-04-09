@@ -14,3 +14,14 @@ footer {
     flex-direction: row;
     gap: 2rem;
 }
+
+@media only screen and (max-width : 425px) {
+    footer {
+        height: auto;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+        padding: 1rem;
+        justify-content: center;
+    }
+}

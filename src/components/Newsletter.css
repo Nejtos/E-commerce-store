@@ -21,3 +21,14 @@
     display: flex;
     gap: 1rem;
 }
+
+.home-page-newsletter {
+    -webkit-box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, 0.23);
+    box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, 0.23);
+    background-color: gray;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+}

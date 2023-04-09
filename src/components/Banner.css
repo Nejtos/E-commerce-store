@@ -1,3 +1,8 @@
+.home-page-banner {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
 .banner-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -28,4 +33,42 @@
 .banner-box-right-text {
   text-align: justify;
   margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+@media only screen and (max-width : 650px) {
+  .banner-box-left {
+    display: none;
+  }
+
+  .banner-box {
+    grid-template-columns: 1fr;
+    height: 20rem;
+  }
+
+  .banner-box-right {
+    padding: 1.25rem;
+  }
+}
+
+@media only screen and (max-width : 426px) {
+  .banner-box-left {
+    display: none;
+  }
+
+  .banner-box {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .banner-box-right {
+    padding: 1.25rem;
+  }
+}
+
+@media only screen and (max-width : 450px) {
+  .banner-box-right-text {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 }

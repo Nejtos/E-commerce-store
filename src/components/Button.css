@@ -2,9 +2,9 @@
     text-align: center;
 }
 
-.ButtonExterior :hover{
+/* .ButtonExterior :hover{
     opacity: 0.8;
-}
+} */
 
 .Button {
     border: transparent;
@@ -73,32 +73,47 @@ button[type="all"], button[type="new collection"], button[type="kitchen"], butto
     font-weight: bold;
 }
 
+button[type="all-active"] {
+    height: 2rem;
+    width: 7rem;
+    outline: 2px solid rgba(0,0,0,.6);
+    background-color: transparent;
+    color: rgb(88, 88, 88);
+    font-weight: bold;
+}
+
 button[type="-"] {
-    /* border-radius: 8px; */
     height: 100%;
     width: 2.5rem;
     border: 0.01rem solid black;
     background: white;
     color: black;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 button[type="+"] {
-    /* border-radius: 8px; */
     height: 100%;
-    width: 2.5rem;
+    width: 3rem;
     border: 0.01rem solid black;
     background: white;
     color: black;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 button[type="Add to cart"] {
-    /* border-radius: 8px; */
     height: 3rem;
     width: 12rem;
-    border: 0.01rem solid black;
+    border: 0.01rem solid #b81818;
     background: white;
     color: black;
     font-weight: bold;
+}
+
+.ButtonExterior[type="Add to cart"] :hover {
+    background: #b81818;
+    color: white;
 }
 
 button[type="BUY NOW"] {
@@ -108,6 +123,11 @@ button[type="BUY NOW"] {
     background: #b81818;
     color: white;
     font-weight: bold;
+}
+
+.ButtonExterior[type="BUY NOW"] :hover {
+    background: white;
+    color: #b81818;
 }
 
 button[type="SHOP NOW"] {
@@ -144,4 +164,12 @@ button[type="Checkout"] {
     color: black;
     background-color: white;
     font-weight: bold;
+}
+
+button[type="menu-icon-img"] {
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/menu-icon.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
 }
