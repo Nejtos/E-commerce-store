@@ -4,7 +4,7 @@ import Button from "./Button";
 import { useNavigate } from "react-router-dom";
 import { items } from "./Data";
 import { useContext, useState } from "react";
-import { CartContext } from "../context/cartContext";
+import { CartContext } from "../context/CartContext.jsx";
 
 function Navbar() {
   const navigate = useNavigate();
